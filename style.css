@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+  /* font-family: "DM Serif Display", serif; */
+
 *{
   padding: 0;
   margin: 0;
@@ -6,4 +10,67 @@
 
 img{
   max-width: 100%;
+}
+
+body{
+  font-family: "Inter", sans-serif;
+}
+
+.section-width{
+  width: 1535px;
+  margin: 0 auto;
+}
+
+.nav-container{
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+
+.nav-child{
+  border: 2px solid blue;
+}
+
+.nav-child:nth-child(1){
+  border: 2px solid yellow;
+}
+
+.nav-child:nth-child(2){
+  border: 2px solid pink;
+}
+
+.nav-anchor{
+  display: flex;
+  gap: 80px;
+}
+
+.nav-anchor a{
+  text-decoration: none;
+  color: #506683;
+  font-size: 12.9px;
+  font-weight: 600;
+}
+
+.nav-child:nth-child(2){
+  display: flex;
+}
+
+.nav-innerchild{
+  font-size: 12.9px;
+  font-weight: 600;
+}
+
+.nav-innerchild p{
+  color: #506683;
+  padding-bottom: 5px;
+}
+
+.nav-innerchild span{
+  color: #506683;
+}
+
+.nav-innerchild a{
+  text-decoration: none;
+  color: #1da1f2;
 }
