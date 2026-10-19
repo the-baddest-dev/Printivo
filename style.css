@@ -207,6 +207,7 @@ button{
   top: 200px;
   left: 595px;
   cursor: pointer;
+  /* border: 2px solid sienna; */
 }
 
 .printivo-child:nth-child(2){

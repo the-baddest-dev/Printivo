@@ -9,13 +9,89 @@
     display: none;
   }
 
-  .main-nav{
-
-  }
-
   .together4{
     display: none;
     margin-left: 0px;
     gap: 5px;
+  }
+
+  .main-nav{
+    padding: 40px 10px;
+  }
+
+  .main-img{
+    width: 60px;
+  }
+
+  .together3{
+    margin-left: 70px;
+    gap: 20px;
+  }
+
+  .together3 a{
+    font-size: 10px;
+  }
+
+  .together3 a:nth-child(2){
+    display: none;
+  }
+
+  .together3 a:nth-child(3) > img{
+    width: 20px;
+  }
+
+  .printivo{
+  background-color: #ece8d9;
+  padding: 40px 10px;
+  display: flex;
+  /* border: 2px solid yellow; */
+  position: relative;
+}
+
+  .printivo-child:nth-child(2){
+    display: none;
+  }
+
+  .printivo-child:nth-child(1) p:nth-child(1){
+  font-family: "DM Serif Display", serif;
+  font-size: 24px;
+  color: #384a62;
+  }
+
+  .printivo-child:nth-child(1) p:nth-child(2){
+  font-size: 12px;
+  font-weight: 600;
+  color: #708095;
+  padding-top: 20px;
+  }
+
+  .printivo-child:nth-child(1) label{
+  /* border: 2px solid brown; */
+  display: block;
+  margin-top: 40px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #384a62;
+  }
+
+  .printivo-child:nth-child(1) input{
+  margin-left: 1px;
+  margin-top: 5px;
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #e8e8e8;
+  padding-left: 10px;
+  font-size: 8px;
+  }
+
+  button{
+  background-color: transparent;
+  border: 1px solid transparent;
+  position: absolute;
+  inset: 0;
+  top: 128px;
+  left: 200px;
+  cursor: pointer;
   }
 }
