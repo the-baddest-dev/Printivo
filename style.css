@@ -19,10 +19,11 @@ body{
 .section-width{
   width: 1535px;
   margin: 0 auto;
+  /* border: 2px solid blue; */
 }
 
 .nav-container{
-  /* border: 2px solid red; */
+  border: 2px solid red;
   display: flex;
   justify-content: space-between;
   padding: 15px 120px;
@@ -95,19 +96,30 @@ body{
   margin-left: 20px;
 }
 
-main{
-  background-color: #ece8d9;
-  padding: 20px 120px;
-  position: relative;
-}
-
 .main-nav{
   display: flex;
   align-items: center;
+  background-color: #ece8d9;
+  height: 80px;
+  padding: 20px 100px;
   /* border: 2px solid black; */
 }
 
-.main-nav > img{
+.main-nav-color{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  container-type: scroll-state;
+}
+
+@container scroll-state(stuck:top){
+  .main-nav{
+    background-color: #ffffff;
+  }
+}
+
+.main-img > img{
+  /* border: 2px solid orange; */
   width: 130px;
   height: 36.13px;
 }
@@ -138,9 +150,11 @@ main{
 }
 
 .printivo{
-  margin: 80px 0;
+  background-color: #ece8d9;
+  padding: 40px 100px 80px 100px;
   display: flex;
   /* border: 2px solid yellow; */
+  position: relative;
 }
 
 .printivo-child:nth-child(1){
@@ -208,7 +222,8 @@ button{
 }
 
 .popular-products{
-  padding: 60px 120px;
+  padding: 60px 100px;
+  /* border: 2px solid pink; */
 }
 
 .popular-text{
@@ -234,12 +249,12 @@ button{
   display: flex;
   margin-top: 20px;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 35px;
 }
 
 .products-child{
   flex-shrink: 0;
-  width: 300px;
+  width: 305px;
 }
 
 .products-child{
@@ -254,13 +269,13 @@ button{
 }
 
 .products-child > a > img:nth-child(1){
-  width: 300px;
+  width: 305px;
   height: 220px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.products-child > a > img:nth-child(1):hover{
+.products-child > a > img:hover{
   transform: scale(1.1);
 }
 
@@ -317,44 +332,4 @@ button{
 
 .products-child-text span:nth-child(4) > img:hover{
   transform: translateX(3px);
-}
-
-.products-child:nth-child(2){
-  border: 2px solid green;
-}
-
-.products-child:nth-child(3){
-  border: 2px solid blue;
-}
-
-.products-child:nth-child(4){
-  border: 2px solid black;
-}
-
-.products-child:nth-child(5){
-  border: 2px solid pink;
-}
-
-.products-child:nth-child(6){
-  border: 2px solid yellow;
-}
-
-.products-child:nth-child(7){
-  border: 2px solid orange;
-}
-
-.products-child:nth-child(8){
-  border: 2px solid gray;
-}
-
-.products-child:nth-child(9){
-  border: 2px solid lawngreen;
-}
-
-.products-child:nth-child(10){
-  border: 2px solid darkcyan;
-}
-
-.products-child:nth-child(11){
-  border: 2px solid violet;
 }
