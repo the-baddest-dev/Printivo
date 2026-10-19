@@ -2,7 +2,7 @@
 
   .section-width{
     width: 480px;
-    margin: 0 auto;
+    margin: 0 15px;
   }
 
   .nav-container{
@@ -11,7 +11,6 @@
 
   .together4{
     display: none;
-    margin-left: 0px;
     gap: 5px;
   }
 
@@ -26,7 +25,7 @@
 
   .together3{
     /* border: 2px solid blue; */
-    margin-left: 200px;
+    margin-left: 100px;
     gap: 20px;
     width: 100%;
   }
