@@ -17,13 +17,18 @@ body{
 }
 
 .section-width{
-  width: 1535px;
+  max-width: 1535px;
+  width: 100%;
   margin: 0 auto;
   /* border: 2px solid blue; */
 }
 
+nav{
+  border: 2px solid pink;
+}
+
 .nav-container{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
   padding: 15px 120px;
@@ -46,11 +51,12 @@ body{
 .nav-child:nth-child(2){
   display: flex;
   align-items: center;
-  gap: 38px;
+  /* gap: 38px; */
+  /* border: 2px solid brown; */
 }
 
 .nav-innerchild:nth-child(1){
-  /* border: 2px solid yellow; */
+  /* border: 2px solid lawngreen; */
   font-size: 12.9px;
   font-weight: 600;
 }
@@ -58,10 +64,12 @@ body{
 .nav-innerchild:nth-child(1) p{
   color: #506683;
   padding-bottom: 5px;
+  /* border: 2px solid lightsalmon; */
 }
 
 .nav-innerchild:nth-child(1) span{
   color: #506683;
+  /* border: 2px solid red; */
 }
 
 .nav-innerchild:nth-child(1) a{
@@ -96,20 +104,21 @@ body{
   margin-left: 20px;
 }
 
+.main-nav-color{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  container-type: scroll-state;
+}
+
+
 .main-nav{
   display: flex;
   align-items: center;
   background-color: #ece8d9;
   height: 80px;
   padding: 20px 100px;
-  /* border: 2px solid black; */
-}
-
-.main-nav-color{
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  container-type: scroll-state;
+  border: 2px solid black;
 }
 
 @container scroll-state(stuck:top){
@@ -230,6 +239,7 @@ button{
 .popular-text{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .popular-text h3{
