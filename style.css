@@ -51,7 +51,7 @@ nav{
 .nav-child:nth-child(2){
   display: flex;
   align-items: center;
-  /* gap: 38px; */
+  gap: 38px;
   /* border: 2px solid brown; */
 }
 
